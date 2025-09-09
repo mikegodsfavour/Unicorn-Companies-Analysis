@@ -49,7 +49,6 @@ This project aims to analyze the landscape of unicorn companies — privately he
 This project equips investors, analysts, and business leaders with data-driven insights to make informed strategic decisions, identify high-potential sectors, and track startup ecosystem performance.
 
 ### Project Scope ###
-
 The scope of this project is to analyze a dataset of privately held companies valued at over $1 billion as of March 2022 (unicorn companies). The analysis focuses on:
 
 - Measuring return on investment (ROI) of unicorn companies.
@@ -63,3 +62,14 @@ The scope of this project is to analyze a dataset of privately held companies va
 - Using Power BI visualizations (bar charts, column charts, and line charts) to present key insights clearly and interactively.
 
 The scope does not include mapping or geographical heatmaps, as the analysis focuses on temporal and categorical insights
+
+### Business Objective ###
+The objective of this project is to uncover key insights about unicorn companies (privately held startups valued at over $1 billion as of March 2022) to support strategic decision-making for investors, analysts, and business leaders.
+
+### Document Purpose ###
+This documentation serves as a guide for project stakeholders, providing insights into the project's objectives, data sources, data analysis, visualizations, and any other relevant information.
+
+### Use Case ###
+
+### Skills Demonstrated ###
+

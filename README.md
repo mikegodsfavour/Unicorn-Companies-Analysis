@@ -97,4 +97,10 @@ In Power BI, connecting to an CSV file involves specifying the location of the C
 
 1. Open Power BI Desktop
 - Launched Power BI Desktop on computer.
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Power%20BI%201.png)
+
+2. Get Data
+- Clicked on the "Blank report" tab in the Power BI Desktop.
+- Clicked on the "Home" tab in the Power BI Desktop.
+- Selected "Get Data" to initiate the data import process
 

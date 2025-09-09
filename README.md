@@ -70,6 +70,21 @@ The objective of this project is to uncover key insights about unicorn companies
 This documentation serves as a guide for project stakeholders, providing insights into the project's objectives, data sources, data analysis, visualizations, and any other relevant information.
 
 ### Use Case ###
+This Power BI project provides insights into unicorn companies — startups valued at over $1 billion as of March 2022 — that can drive improvement across investment decision-making, market analysis, and strategic planning. Different stakeholders within the startup and investment ecosystem can use these findings to enhance their respective functions.
+**Key stakeholders who could benefit from this analysis include:**
+- Investment Managers
+  - Can use insights on return on investment (ROI) and average time to unicorn to guide funding allocation.
+  - Identify promising companies and industries with high growth potential.
+- Business Strategists & Analysts
+  - Can track trends in unicorn formation over time to predict future startup success cycles.
+  - Use industry and investor insights to shape competitive strategies.
+- Startup Founders & Executives
+  - Gain awareness of the timelines and patterns associated with achieving unicorn status.
+  - Benchmark their growth trajectory against historical trends.
+- Venture Capital & Private Equity Firms
+  - Analyze investor participation patterns to assess market competition.
+  - Focus investments in locations and industries showing consistent unicorn emergence.
+This analysis serves as a strategic tool for optimizing investments, spotting emerging opportunities, and improving decision-making in the high-growth startup ecosystem.
 
 ### Skills Demonstrated ###
 

@@ -77,7 +77,7 @@ This project showcases the following skills:
  
 ### Data Source ###
 The dataset for this project is sourced from [Maven Analytics website](https://app.mavenanalytics.io/datasets?search=Unicorn), designed specifically for practice purposes. The project utilizes a dataset containing information on unicorn companies (privately held startups valued at over $1 billion as of March 2022).
-The dataset was downloaded from the Maven Analytics platform and is provided in CSV format. It consists of one main table with 1,074 rows and 10 columns.
+The dataset was downloaded from the Maven Analytics platform and is provided in Excel format. It consists of one main table with 1,074 rows and 10 columns.
 The columns include:
 
 - Company – Name of the unicorn company.
@@ -93,7 +93,7 @@ The columns include:
 This dataset provides a comprehensive view of unicorn companies, including their valuations, funding details, industries, and investors, which makes it suitable for performing trend analysis, ROI evaluation, and growth insights in Power BI.
 
 ### Data Connection Detail 
-In Power BI, connecting to an CSV file involves specifying the location of the CSV file and defining the data import settings. Here are the steps taken in data connection in Power BI.
+In Power BI, connecting to an Excel file involves specifying the location of the Excel file and defining the data import settings. Here are the steps taken in data connection in Power BI.
 
 1. Open Power BI Desktop
 - Launched Power BI Desktop on computer.
@@ -103,4 +103,11 @@ In Power BI, connecting to an CSV file involves specifying the location of the C
 - Clicked on the "Blank report" tab in the Power BI Desktop.
 - Clicked on the "Home" tab in the Power BI Desktop.
 - Selected "Get Data" to initiate the data import process
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Get%20Data.png
+
+3. Choose Excel and Specify the File Location
+- In the "Get Data" window, selected "Excel Workbook" as the data source.
+- Navigated to the location where the Excel file is stored.
+- Selected the Excel file I want to import and clicked "Open."
+
 

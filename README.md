@@ -103,7 +103,7 @@ In Power BI, connecting to an Excel file involves specifying the location of the
 - Clicked on the "Blank report" tab in the Power BI Desktop.
 - Clicked on the "Home" tab in the Power BI Desktop.
 - Selected "Get Data" to initiate the data import process
-![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Get%20Data.png
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Get%20Data.png)
 
 3. Choose Excel and Specify the File Location
 - In the "Get Data" window, selected "Excel Workbook" as the data source.
@@ -113,6 +113,7 @@ In Power BI, connecting to an Excel file involves specifying the location of the
 
 4. Load and Transform
 - Click on “Load Data” → this will import the dataset directly into Power BI Desktop, where you can start building and viewing your visuals (reports, dashboards, charts).
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/desktop.png)
 
 - Click on “Transform Data” → this will open the Power Query Editor, where you can clean, transform, and shape your dataset (remove nulls, fix data types, split columns, etc.) before loading it into Power BI Desktop.
 

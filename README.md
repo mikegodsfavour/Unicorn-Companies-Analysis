@@ -10,7 +10,7 @@ This is a Power BI project that analyzes unicorn companies — privately held st
 - [Use Case](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#use-case)
 - [Skills Demonstrated](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#skills-demonstrated)
 - [Data Source](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-source)
-- Data Connection Detail
+- [Data Connection Detail](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-connection-detail)
 - Data Profiling
 - Data modelling
 - Data Cleaning and Process
@@ -77,7 +77,7 @@ This project showcases the following skills:
  
 ### Data Source ###
 The dataset for this project is sourced from [Maven Analytics website](https://app.mavenanalytics.io/datasets?search=Unicorn), designed specifically for practice purposes. The project utilizes a dataset containing information on unicorn companies (privately held startups valued at over $1 billion as of March 2022).
-The dataset was downloaded from the Maven Analytics platform and is provided in Excel format. It consists of one main table with 1,074 rows and 10 columns.
+The dataset was downloaded from the Maven Analytics platform and is provided in CSV format. It consists of one main table with 1,074 rows and 10 columns.
 The columns include:
 
 - Company – Name of the unicorn company.
@@ -90,4 +90,11 @@ The columns include:
 - Year Founded – The year the company was established.
 - Date Joined – The year the company achieved unicorn status (valuation above $1 billion).
 - Continent – The continent where the company is located.
-This dataset provides a comprehensive view of unicorn companies, including their valuations, funding details, industries, and
+This dataset provides a comprehensive view of unicorn companies, including their valuations, funding details, industries, and investors, which makes it suitable for performing trend analysis, ROI evaluation, and growth insights in Power BI.
+
+### Data Connection Detail 
+In Power BI, connecting to an CSV file involves specifying the location of the CSV file and defining the data import settings. Here are the steps taken in data connection in Power BI.
+
+1. Open Power BI Desktop
+- Launched Power BI Desktop on computer.
+

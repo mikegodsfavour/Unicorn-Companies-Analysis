@@ -261,7 +261,7 @@ To explore whether this pattern has remained constant over time, a line chart wa
 
 In earlier years (around 2008-2010), companies often took 9–10 years to reach unicorn status.
 
-In more recent years (2020–2022), many companies achieved unicorn valuation in just 5–6 years.
+In more recent years (2020–2022), many companies achieved unicorn valuation in just 6-7 years.
 
 This trend suggests that the time to unicorn has been decreasing over the years, reflecting faster market adoption, increased venture capital availability, and technology-driven growth cycles.
 
@@ -270,6 +270,8 @@ This trend suggests that the time to unicorn has been decreasing over the years,
 This question explores the geographic distribution of unicorn companies by country, aiming to identify nations that dominate the global unicorn landscape. Analyzing unicorn counts by country helps reveal where innovation ecosystems are thriving and which regions attract the most venture capital investment.
 
 The measure Total Unicorns (calculated using DISTINCTCOUNT(Company)) was used to count the number of unique unicorn companies in each country. A bar chart visualization was employed to compare countries side by side, making it easy to identify the leading hubs.
+
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Top%20Countries%20With%20The%20Most%20Unicorn.png)
 
 **Insights from the Analysis**
 

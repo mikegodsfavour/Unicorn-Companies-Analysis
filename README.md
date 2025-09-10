@@ -1,4 +1,4 @@
-### **UNICORN COMPANIES ANALYSIS** ###
+# **UNICORN COMPANIES ANALYSIS** 
 
 This is a Power BI project that analyzes unicorn companies — privately held startups valued at over $1 billion as of March 2022. The dataset includes essential details such as company name, valuation, funding, country, industry, city, continent, key investors, year founded, and unicorn year (date joined).
 
@@ -149,13 +149,43 @@ Key Profiling Tasks Included:
 
 ## Data modelling
 The dataset used for this analysis consisted of a single flat table containing all necessary attributes of unicorn companies (Company, Valuation, Funding, Country, City, Continent, Industry, Investors, Year Founded, and Date Joined).
-
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Modeling.png)
 
 Because all the required fields were already included in one table, there was no need to create relationships or build a complex data model.
 The data was directly connected and prepared in Power Query Editor, then loaded into Power BI Desktop for analysis and visualization.
 
 ## Data Cleaning and Process
+In Power BI, data cleaning was performed using Power Query Editor, which provides versatile tools to shape and transform data before loading it into the Power BI model. This step was crucial to ensure data integrity, quality, consistency, and accuracy.
 
+After conducting data profiling, the dataset was generally well-structured and consistent, but several cleaning steps were required to prepare it for analysis:
+- Valuation Column: Removed symbols ($, B, M, commas) and converted to Decimal Number. Missing value was replaced with 0.
+- Funding Column: Removed unwanted characters, converted to Whole Number. Missing/unknown values were replaced with 0.
+- Investors Column: Left in Text format as it often contained multiple investors. Missing values left blank.
+- Date Fields: Converted Year Founded and Date Joined to proper Date/Year types for time-based calculations.
+No new calculated columns were created in Power Query, as the dataset already contained all necessary fields for analysis.
+
+**DAX Measures Created**
+The following DAX measures were developed in Power BI to support detailed analysis:
+
+**Total Unicorns** → Counts the total number of unicorn companies.
+
+*DAX code for calculating Total Unicorn*
+
+Total Unicorn = DISTINCTCOUNT(Unicorn_Companies[Company]
+
+Total Funding Raised → Calculates the total funding across all unicorns.
+
+Total Valuation → Calculates the combined valuation of all unicorns.
+
+Return on Investment (ROI) → Measures the ratio of valuation to funding for each company.
+
+Average ROI → Calculates the average ROI across all unicorns.
+
+Total Time to Unicorn (Years) → Computes the total number of years it took companies (sum) to achieve unicorn status.
+
+Average Time to Unicorn (Years) → Computes the average number of years it took companies to achieve unicorn status.
+
+These measures formed the foundation of the analysis and were used to build interactive visuals such as bar charts, line charts, and KPI cards.
   
 ## Data Analysis and Insight
 

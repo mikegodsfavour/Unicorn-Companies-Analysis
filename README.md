@@ -167,23 +167,58 @@ No new calculated columns were created in Power Query, as the dataset already co
 **DAX Measures Created**
 The following DAX measures were developed in Power BI to support detailed analysis:
 
-**Total Unicorns** → Counts the total number of unicorn companies.
+   - **Total Unicorns** → Counts the total number of unicorn companies.
 
 *DAX code for calculating Total Unicorn*
 
-Total Unicorn = DISTINCTCOUNT(Unicorn_Companies[Company]
+`Total Unicorn = DISTINCTCOUNT(Unicorn_Companies[Company])`
 
-Total Funding Raised → Calculates the total funding across all unicorns.
+   - **Total Funding Raised** → Calculates the total funding across all unicorns.
 
-Total Valuation → Calculates the combined valuation of all unicorns.
+*DAX code for calculating Total Funding Raised*
 
-Return on Investment (ROI) → Measures the ratio of valuation to funding for each company.
+`Total Funding Raised = 
+VAR TotalFunding = SUM('Unicorn_Companies'[Funding])
+VAR InBillions = DIVIDE(TotalFunding, 1000000000)
+RETURN
+"$" & FORMAT(InBillions, "#,##0") & " B"`
 
-Average ROI → Calculates the average ROI across all unicorns.
+   - **Total Valuation** → Calculates the combined valuation of all unicorns.
+ 
+*DAX code for calculating Total Valuation*
 
-Total Time to Unicorn (Years) → Computes the total number of years it took companies (sum) to achieve unicorn status.
+`Total Valuation (B) = 
+VAR TotalValuation = SUM('Unicorn_Companies'[Valuation])
+VAR InBillions = DIVIDE(TotalValuation, 1000000000)
+RETURN
+"$" & FORMAT(InBillions, "#,##0") & " B"`
 
-Average Time to Unicorn (Years) → Computes the average number of years it took companies to achieve unicorn status.
+   - **Return on Investment (ROI)** → Measures the ratio of valuation to funding for each company.
+
+*DAX code for calculating Return on Investment (ROI)*
+
+`Return On Investment(ROI) = DIVIDE(SUM(Unicorn_Companies[Valuation]) -SUM(Unicorn_Companies[Funding]), SUM(Unicorn_Companies[Funding]), 0)`
+
+   - **Average ROI** → Calculates the average ROI across all unicorns.
+
+*DAX code for calculating Average ROI*
+
+`Average(ROI) = DIVIDE(SUM(Unicorn_Companies[Valuation]) - SUM(Unicorn_Companies[Funding]), SUM(Unicorn_Companies[Funding]))`
+
+    - **Time to Unicorn (Years)** → This gives the years it took companies to achieve unicorn status.
+    
+*DAX code for calculating Total Time to Unicorn (Years)*
+
+`Time to Unicorn (Years) = 
+VAR AvgTime =
+    AVERAGEX(
+        'Unicorn_Companies',
+        YEAR('Unicorn_Companies'[Date Joined]) - 'Unicorn_Companies'[Year Founded]
+    )
+RETURN
+FORMAT(ROUND(AvgTime,0), "0") & " Years"`
+
+     - **Average Time to Unicorn (Years)** → Computes the average number of years it took companies to achieve unicorn status.
 
 These measures formed the foundation of the analysis and were used to build interactive visuals such as bar charts, line charts, and KPI cards.
   

@@ -204,8 +204,7 @@ RETURN
 *DAX code for calculating Average ROI*
 
 `Average(ROI) = DIVIDE(SUM(Unicorn_Companies[Valuation]) - SUM(Unicorn_Companies[Funding]), SUM(Unicorn_Companies[Funding]))`
-
-    - **Time to Unicorn (Years)** → This gives the years it took companies to achieve unicorn status.
+  - **Time to Unicorn (Years)** → This calculates the number of years it took each individual company to become a unicorn.
     
 *DAX code for calculating Total Time to Unicorn (Years)*
 
@@ -217,13 +216,36 @@ VAR AvgTime =
     )
 RETURN
 FORMAT(ROUND(AvgTime,0), "0") & " Years"`
+  - **Average Time to Unicorn (Years)** → This calculates the average number of years across all unicorn companies.
 
-     - **Average Time to Unicorn (Years)** → Computes the average number of years it took companies to achieve unicorn status.
+ *DAX code for calculating Average Time to Unicorn (Years)*
+     
+`Average Time to Unicorn Year = AVERAGEX(VALUES(('Unicorn_Companies'[Date Joined])), CALCULATE(AVERAGEX( Unicorn_Companies,YEAR('Unicorn_Companies'[Date Joined]) - 'Unicorn_Companies'[Year Founded])))`
 
 These measures formed the foundation of the analysis and were used to build interactive visuals such as bar charts, line charts, and KPI cards.
   
 ## Data Analysis and Insight
 
+1. Which unicorn companies have had the biggest return on investment (ROI)?
+
+This question seeks to identify the unicorn companies that generated the highest return on investment (ROI), a critical measure of profitability and growth efficiency. ROI is an important performance metric because it shows how much value a company has created compared to the funding it received. By highlighting companies with the highest ROI, this analysis uncovers the most financially efficient unicorns, helping to understand which startups turned investor capital into the greatest value.
+
+The analysis was carried out by calculating ROI for each company as:
+ 
+   ``**ROI= (Valuation – Funding Raised)/ Funding Raised**``
+	​
+
+This metric measures how much value (valuation) a unicorn generates beyond the funding it has received. Companies with higher ROI demonstrate stronger financial performance and more efficient use of capital, while those with lower ROI may indicate weaker growth relative to their funding.
+
+
+
+**Insights from the Analysis**
+
+The analysis revealed that Zongmu Technology recorded the highest Return on Investment (ROI), achieving many times its funding in valuation. Zihaiguo and Zipline followed closely, both showing ROI values significantly above their funding, which indicates strong investor returns and efficient capital utilization.
+
+Other companies in the top 10 with outstanding ROI performance include Zilch, Zocdoc, Zume, Ziroom, Zuoyebang, Zwift, and Zopa. Each of these companies demonstrated the ability to generate valuations that far exceeded their initial funding, signaling robust business models and market demand.
+
+These findings highlight how certain unicorn companies have been able to leverage their funding efficiently to achieve high valuations, thereby delivering exceptional returns to investors.
 
 ## Data Visualization
 

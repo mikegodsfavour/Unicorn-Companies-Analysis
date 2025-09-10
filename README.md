@@ -11,13 +11,13 @@ This is a Power BI project that analyzes unicorn companies — privately held st
 - [Skills Demonstrated](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#skills-demonstrated)
 - [Data Source](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-source)
 - [Data Connection Detail](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-connection-detail)
-- Data Profiling
-- Data modelling
-- Data Cleaning and Process
-- Data Analysis and Insight
-- Data Visualization
-- Recommendation
-- Conclusion
+- [Data Profiling](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-profiling)
+- [Data modelling](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-modelling)
+- [Data Cleaning and Process](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-cleaning-and-process)
+- [Data Analysis and Insight](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-analysis-and-insight)
+- [Data Visualization](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#data-visualization)
+- [Recommendation](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#recommendation)
+- [Conclusion](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/edit/main/README.md#conclusion)
 
 ### Project Overview ###
 
@@ -80,16 +80,16 @@ The dataset for this project is sourced from [Maven Analytics website](https://a
 The dataset was downloaded from the Maven Analytics platform and is provided in Excel format. It consists of one main table with 1,074 rows and 10 columns.
 The columns include:
 
-- Company – Name of the unicorn company.
-- Valuation – Current valuation of the company in billions of US dollars.
-- Funding – Total amount of funding raised by the company in US dollars.
-- Country – Country where the company was founded or is headquartered.
-- City – City where the company is located.
-- Industry – Sector or market in which the company operates.
-- Selected Investors – Key investors who have funded the company.
-- Year Founded – The year the company was established.
-- Date Joined – The year the company achieved unicorn status (valuation above $1 billion).
-- Continent – The continent where the company is located.
+- **Company** – Name of the unicorn company.
+- **Valuation** – Current valuation of the company in billions of US dollars.
+- **Funding** – Total amount of funding raised by the company in US dollars.
+- **Country** – Country where the company was founded or is headquartered.
+- **City** – City where the company is located.
+- **Industry** – Sector or market in which the company operates.
+- **Selected Investors** – Key investors who have funded the company.
+- **Year Founded** – The year the company was established.
+- **Date Joined** – The year the company achieved unicorn status (valuation above $1 billion).
+- **Continent** – The continent where the company is located.
 This dataset provides a comprehensive view of unicorn companies, including their valuations, funding details, industries, and investors, which makes it suitable for performing trend analysis, ROI evaluation, and growth insights in Power BI.
 
 ### Data Connection Detail 
@@ -111,11 +111,60 @@ In Power BI, connecting to an Excel file involves specifying the location of the
 - Selected the Excel file I want to import and clicked "Open."
 ![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Load%20Data.png)
 
-4. Load and Transform
+4. Load and Transform Data
 - Click on “Load Data” → this will import the dataset directly into Power BI Desktop, where you can start building and viewing your visuals (reports, dashboards, charts).
 ![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/desktop.png)
 
+
 - Click on “Transform Data” → this will open the Power Query Editor, where you can clean, transform, and shape your dataset (remove nulls, fix data types, split columns, etc.) before loading it into Power BI Desktop.
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/transform.png)
+
+### Data Profiling
+Before analysis, the dataset was profiled in Power Query Editor to understand its structure and quality.
+Key Profiling Tasks Included:
+
+- **Data Structure**
+  - Dataset contained 1,074 unicorn company records as of March 2022.
+  - Dataset consisted of 10 fields, including: Company, Valuation, Funding, Country, City, Continent, Industry, Investors, Year Founded, and Date Joined.
+    
+- **Column Analysis**
+  - Company: Categorical, name of each unicorn company.
+  - Valuation: Numeric (after cleaning). Originally stored as Text with unwanted characters. Cleaned and stored as Whole Number. Missing or unknown values were replaced with 0.
+  - Country / City / Continent: Categorical – used for geographical or regional grouping (though not visualized with maps in this project).
+  - Industry: Categorical – grouped companies by sector.
+  - Investors: Text field – often contained multiple investors per company. For analysis, only selected investors were considered.
+  - Year Founded: Year field – used to calculate company age.
+  - Date Joined: Date/Year field – the year the company achieved unicorn status.
+
+- **Missing Value Check**
+  - Some fields such as Funding and Investors had missing or incomplete entries.
+  - Where values were unknown (e.g., certain funding values), they were replaced with 0.
+  - For text fields like Investors, missing values were left blank to avoid distorting results.
+
+- **Data Type Validation**
+  - Valuation converted to Decimal Number.
+  - Funding converted to Whole Number.
+  - Year Founded and Date Joined converted to Date/Year data types
 
 
+## Data modelling
+The dataset used for this analysis consisted of a single flat table containing all necessary attributes of unicorn companies (Company, Valuation, Funding, Country, City, Continent, Industry, Investors, Year Founded, and Date Joined).
+
+
+Because all the required fields were already included in one table, there was no need to create relationships or build a complex data model.
+The data was directly connected and prepared in Power Query Editor, then loaded into Power BI Desktop for analysis and visualization.
+
+## Data Cleaning and Process
+
+  
+## Data Analysis and Insight
+
+
+## Data Visualization
+
+
+## Recommendation
+
+
+## Conclusion
 

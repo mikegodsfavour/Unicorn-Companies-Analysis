@@ -226,7 +226,7 @@ These measures formed the foundation of the analysis and were used to build inte
   
 ## Data Analysis and Insight
 
-1. Which unicorn companies have had the biggest return on investment (ROI)?
+**1. Which unicorn companies have had the biggest return on investment (ROI)?**
 
 This question seeks to identify the unicorn companies that generated the highest return on investment (ROI), a critical measure of profitability and growth efficiency. ROI is an important performance metric because it shows how much value a company has created compared to the funding it received. By highlighting companies with the highest ROI, this analysis uncovers the most financially efficient unicorns, helping to understand which startups turned investor capital into the greatest value.
 
@@ -246,6 +246,42 @@ The analysis revealed that Zongmu Technology recorded the highest Return on Inve
 Other companies in the top 10 with outstanding ROI performance include Zilch, Zocdoc, Zume, Ziroom, Zuoyebang, Zwift, and Zopa. Each of these companies demonstrated the ability to generate valuations that far exceeded their initial funding, signaling robust business models and market demand.
 
 These findings highlight how certain unicorn companies have been able to leverage their funding efficiently to achieve high valuations, thereby delivering exceptional returns to investors.
+
+**2. How long does it usually take for a company to become a Unicorn? Has it always been this way?**
+
+This question seeks to understand the average time it takes companies to achieve Unicorn status (valuation of $1 billion or more) from the year they were founded. The calculation was done by subtracting each company’s founding year from the year it achieved Unicorn status. This measure is referred to as Time to Unicorn (Years), while the overall trend across all companies is measured using Average Time to Unicorn (Years).
+
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Average%20Time%20To%20Unicorn%20Trend.png)
+
+**Insights from the Analysis**
+
+The analysis shows that, on average, unicorn companies take about 7 years to achieve this milestone. This reflects the typical growth cycle and highlights how quickly companies scale from start-up stage to billion-dollar valuation.
+
+To explore whether this pattern has remained constant over time, a line chart was used to visualize Average Time to Unicorn by Year Joined. The results indicate a clear trend:
+
+In earlier years (around 2008-2010), companies often took 9–10 years to reach unicorn status.
+
+In more recent years (2020–2022), many companies achieved unicorn valuation in just 5–6 years.
+
+This trend suggests that the time to unicorn has been decreasing over the years, reflecting faster market adoption, increased venture capital availability, and technology-driven growth cycles.
+
+**3. Which countries have the most Unicorns?**
+
+This question explores the geographic distribution of unicorn companies by country, aiming to identify nations that dominate the global unicorn landscape. Analyzing unicorn counts by country helps reveal where innovation ecosystems are thriving and which regions attract the most venture capital investment.
+
+The measure Total Unicorns (calculated using DISTINCTCOUNT(Company)) was used to count the number of unique unicorn companies in each country. A bar chart visualization was employed to compare countries side by side, making it easy to identify the leading hubs.
+
+**Insights from the Analysis**
+
+The analysis revealed that:
+
+- United States leads with the highest number of unicorns, reflecting its strong startup ecosystem, large venture capital network, and technology-driven markets.
+
+- China follows as the second-largest hub, driven by its rapid digital adoption and government-backed funding initiatives.
+
+- Other countries such as India, United Kingdom, and Germany also ranked among the top contributors, showcasing growing startup ecosystems.
+
+These insights highlight how unicorn creation is not evenly distributed across the globe but is instead concentrated in innovation-heavy economies with access to capital, talent, and market opportunities.
 
 ## Data Visualization
 

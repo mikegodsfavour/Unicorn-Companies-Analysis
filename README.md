@@ -232,12 +232,12 @@ This question seeks to identify the unicorn companies that generated the highest
 
 The analysis was carried out by calculating ROI for each company as:
  
-   ``**ROI= (Valuation – Funding Raised)/ Funding Raised**``
+   ``ROI = (Valuation – Funding Raised)/ Funding Raised``
 	​
 
 This metric measures how much value (valuation) a unicorn generates beyond the funding it has received. Companies with higher ROI demonstrate stronger financial performance and more efficient use of capital, while those with lower ROI may indicate weaker growth relative to their funding.
 
-
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Biggest%20Return%20On%20Investment%20By%20The%20Unicorn%20Companies.png)
 
 **Insights from the Analysis**
 

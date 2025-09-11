@@ -251,7 +251,7 @@ These findings highlight how certain unicorn companies have been able to leverag
 
 This question seeks to understand the average time it takes companies to achieve Unicorn status (valuation of $1 billion or more) from the year they were founded. The calculation was done by subtracting each company’s founding year from the year it achieved Unicorn status. This measure is referred to as Time to Unicorn (Years), while the overall trend across all companies is measured using Average Time to Unicorn (Years).
 
-![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Average%20Time%20To%20Unicorn%20Trend.png)
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Average%20Time%20to%20Unicorn%20Trend.png)
 
 **Insights from the Analysis**
 
@@ -284,6 +284,42 @@ The analysis revealed that:
 - Other countries such as India, United Kingdom, and Germany also ranked among the top contributors, showcasing growing startup ecosystems.
 
 These insights highlight how unicorn creation is not evenly distributed across the globe but is instead concentrated in innovation-heavy economies with access to capital, talent, and market opportunities.
+
+**4. Are there any cities that appear to be industry hubs?**
+
+This question investigates whether certain cities stand out as key hubs for unicorn companies, attracting a high concentration of startups across industries. Identifying such cities provides insights into the role of urban innovation ecosystems, access to funding, infrastructure, and talent pools.
+
+The measure Total Unicorns (DISTINCTCOUNT(Company)) was used to count the number of unicorns in each city. A bar chart visualization was applied to display the top-performing cities, making it clear which locations are most attractive to unicorn companies.
+
+**Insights from the Analysis**
+
+The analysis revealed that:
+
+- San Francisco emerged as the top unicorn hub, largely driven by its proximity to Silicon Valley and access to global venture capital.
+
+- New York and Beijing and ollowed closely, reflecting China’s thriving innovation and government-backed tech ecosystem.
+
+- Other cities such as Shanghai and London also ranked highly, underscoring their role as global financial and startup centers.
+
+These results show that unicorn creation is highly clustered in innovation-driven urban hubs, where supportive ecosystems enable startups to scale faster and secure higher valuations.
+
+**5. Which investors have funded the most unicorns?**
+
+This question seeks to identify the top investors who have played the largest role in supporting unicorn companies. Investors are a critical part of the unicorn ecosystem, as their funding decisions directly influence which startups achieve billion-dollar valuations.
+
+The analysis focused on the “Investors” column of the dataset, where companies often have multiple backers. To address this:
+
+- The data was processed to split and clean multiple investors per company.
+
+- Each investor’s contribution was then counted to determine how many unique unicorns they have funded.
+  
+A Column chart visualization was used to display the Top 10 investors by number of unicorns funded
+
+**Insight from Your Analysis**
+
+The analysis revealed that Y Combinator emerged as the top investor, funding the highest number of unicorns. Following closely were Zeev Ventures, Yabeo Capital, Yinhong Equity Investment, YL Ventures, and York Capital Management.
+
+These investors have consistently backed multiple unicorn startups, highlighting their strong ability to identify and support high-growth companies early on. The prominence of Y Combinator, in particular, demonstrates the critical role of startup accelerators in nurturing unicorns.
 
 ## Data Visualization
 

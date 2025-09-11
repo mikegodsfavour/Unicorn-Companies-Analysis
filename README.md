@@ -291,6 +291,8 @@ This question investigates whether certain cities stand out as key hubs for unic
 
 The measure Total Unicorns (DISTINCTCOUNT(Company)) was used to count the number of unicorns in each city. A bar chart visualization was applied to display the top-performing cities, making it clear which locations are most attractive to unicorn companies.
 
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Top%20City%20As%20Unicorn%20Hubs.png)
+
 **Insights from the Analysis**
 
 The analysis revealed that:

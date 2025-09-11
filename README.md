@@ -363,6 +363,8 @@ The analysis of unicorn companies was supported with a series of visualizations 
      
  Together, these visualizations provide a comprehensive dashboard that answers the key research questions, from overall unicorn counts, to ROI performance, geographical hubs, and investor activity.
 
+![](https://github.com/mikegodsfavour/Unicorn-Companies-Analysis/blob/main/Unicorn%20pictures/Unicorn%20Companies%20Dashboard%201.png)
+
 ## Recommendation
 
 Based on the analysis of unicorn companies, the following recommendations are made:

@@ -90,6 +90,7 @@ The columns include:
 - **Year Founded** – The year the company was established.
 - **Date Joined** – The year the company achieved unicorn status (valuation above $1 billion).
 - **Continent** – The continent where the company is located.
+
 This dataset provides a comprehensive view of unicorn companies, including their valuations, funding details, industries, and investors, which makes it suitable for performing trend analysis, ROI evaluation, and growth insights in Power BI.
 
 ### Data Connection Detail 

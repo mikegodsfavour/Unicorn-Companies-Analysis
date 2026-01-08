@@ -332,13 +332,13 @@ The analysis of unicorn companies was supported with a series of visualizations 
 
 **1. Total Metrics (Cards)**
 
-    - *Total Unicorns* → Displayed using a card, showing the distinct count of unicorn companies.
+  - *Total Unicorns* → Displayed using a card, showing the distinct count of unicorn companies.
 
-    - *Total Funding Raised* → Displayed using a card, showing the sum of all funding raised across unicorns.
+  - *Total Funding Raised* → Displayed using a card, showing the sum of all funding raised across unicorns.
 
-    - *Total Valuation* → Displayed using a card, showing the total valuation of all unicorns combined.
+  - *Total Valuation* → Displayed using a card, showing the total valuation of all unicorns combined.
 
-    - *Average Time to Unicorn* → Displayed using a card, showing how long it usually takes for a company to reach unicorn status.
+  - *Average Time to Unicorn* → Displayed using a card, showing how long it usually takes for a company to reach unicorn status.
 
 **2. Time to Unicorn**
 
